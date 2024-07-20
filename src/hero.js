@@ -22,7 +22,7 @@ function Hero() {
 
       console.log(formattedData);
 
-      await axios.post('http://localhost:5000/submit-referral', formattedData);
+      await axios.post('https://accredian-backend-task-vjah.onrender.com/submit-referral', formattedData);
       alert('Form submitted successfully!');
       reset(); // Clear form fields after submission
       setShowPopup(false); // Close form popup after submission
